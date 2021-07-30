@@ -1,9 +1,5 @@
 {
-	"name": "Claim Register Plugin",
-	"globIgnorePaths": [
-		"**/package.json",
-		"**/tsconfig.json"
-	],
+	"name": "MainModule",
 	"tree": {
 		"$path": "out",
 		"include": {
