@@ -1,0 +1,41 @@
+name: Beta Release
+
+on:
+  - push:
+    branches:
+      - master
+  - workflow_dispatch
+
+jobs:
+  ci:
+    name: CI and Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'yarn'
+
+      - uses: Roblox/setup-foreman@v1
+        with:
+          version: "^1.0.0"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Report tool versions
+        run: echo ROJO && rojo --version && echo Roblox-TS && rbxtsc --version
+
+      - name: Build
+        run: yarn build:prod
+
+      - name: Deploy
+        run: rojo upload --cookie "$ROBLOSECURITY" --asset_id 7175337547 default.project.json
+        env:
+          ROBLOSECURITY: ${{ secrets.ROBLOSECURITY }}
