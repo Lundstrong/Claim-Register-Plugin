@@ -15,6 +15,11 @@ Firstly, you will need to open your "Add" script (under LundstrongOrders -> Add)
 #### 2. Move Models
 Under the Models folder, create a new folder called `Claimable`. Under here, move the models you would like to be claimable into it.
 
+## FAQ
+
+### The "claim button" isn't working when I press it
+Please go into the register model, click on the mainPart -> SurfaceGui and make the active checkbox clicked.
+
 ## Contributing
 We love contributions! Pull requests are warmly welcomed and highly appriciated. For major changes, please open an issue first or discuss on the discord to let us know what you would like to change.
 
