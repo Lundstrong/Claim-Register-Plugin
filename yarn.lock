@@ -105,10 +105,10 @@
   resolved "https://registry.yarnpkg.com/@rbxts/t/-/t-2.1.4.tgz#fd9f7a6caff44b06258f6bdc7705bb75833b7953"
   integrity sha512-DjDoh3NkcM3fmJDjwrcJaSKJu6oykUvJnZK2voRgZLlfb/8Nk4MNAlYLsuBiSexJA/q89+kOa8YzS/WN7Ysdow==
 
-"@rbxts/types@1.0.496":
-  version "1.0.496"
-  resolved "https://registry.yarnpkg.com/@rbxts/types/-/types-1.0.496.tgz#ea5e9aa535d08505a99493cd6cc0bf48bb6354d0"
-  integrity sha512-ZYPsIEhoDVqZHedeMY/YJPq9IG7IqZ2oSVfVheADlR8frYuhzZivKDYm7whaW895FrdYXIEVXTtRSPiUruOzNw==
+"@rbxts/types@1.0.509":
+  version "1.0.509"
+  resolved "https://registry.yarnpkg.com/@rbxts/types/-/types-1.0.509.tgz#ca684d6837cd7bbdc97b48588157536bf04fc1d6"
+  integrity sha512-/cL23J9NV5TDFFC55J58os4sXNQfgEF4X9GKU1QKGAsMrvGxwG+LSpp7sRfaJgYcGpfiYm97ava9YhSuvdMlVA==
 
 "@types/json-schema@^7.0.7":
   version "7.0.8"
