@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A plugin for claimable registers",
   "scripts": {
-    "build": "rbxtsc && rbxmxc",
-    "build:watch": "concurrently -c cyan,yellow -n Typescript,rbxmx-to-ts -s first -k \"rbxtsc -w\" \"rbxmxc -w\""
+    "build:prod": "rbxtsc",
+    "build:watch": "concurrently -c cyan,yellow -n Typescript,rbxmx-to-ts -s first -k \"rbxtsc -w --rojo development.project.json\" \"rbxmxc -w\""
   },
   "license": "Apache-2.0",
   "dependencies": {
