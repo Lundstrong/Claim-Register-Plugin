@@ -1,10 +1,10 @@
 name: Beta Release
 
 on:
-  - push:
+  push:
     branches:
       - master
-  - workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   ci:
@@ -30,7 +30,7 @@ jobs:
         run: yarn install
 
       - name: Report tool versions
-        run: echo ROJO && rojo --version && echo Roblox-TS && rbxtsc --version
+        run: echo ROJO && rojo --version && echo Roblox-TS && npx rbxtsc --version
 
       - name: Build
         run: yarn build:prod
