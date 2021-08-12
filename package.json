@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@rbxts/compiler-types": "1.1.1-types.5",
-    "@rbxts/types": "1.0.509",
+    "@rbxts/types": "1.0.516",
     "@typescript-eslint/eslint-plugin": "4.28.5",
     "@typescript-eslint/parser": "4.28.5",
     "concurrently": "6.2.0",
