@@ -1,0 +1,33 @@
+{
+    "name": "Claim Register Plugin",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Claim Register Plugin": {
+                "$ignoreUnknownInstances": true,
+                "$path": "out/ReplicatedStorage",
+                "include": {
+                    "$path": "include",
+                    "node_modules": {
+                        "$path": "node_modules/@rbxts"
+                    }
+                }
+            }
+        },
+        "StarterGui": {
+            "$className": "StarterGui",
+            "Claim Register Plugin": {
+                "$ignoreUnknownInstances": true,
+                "$path": "out/StarterGui"
+            }
+        },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Claim Register Plugin": {
+                "$ignoreUnknownInstances": true,
+                "$path": "out/ServerScriptService"
+            }
+        }
+    }
+}

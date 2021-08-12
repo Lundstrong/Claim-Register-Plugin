@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A plugin for claimable registers",
   "scripts": {
-    "build:prod": "rbxtsc --rojo dModel.project.json",
+    "build:prod": "rbxtsc --rojo compile.project.json",
     "build:watch": "concurrently -c cyan,yellow -n Typescript,rbxmx-to-ts -s first -k \"rbxtsc -w --rojo development.project.json\" \"rbxmxc -w\""
   },
   "license": "Apache-2.0",
@@ -26,7 +26,7 @@
     "prettier": "2.3.2",
     "rbxmx-to-ts": "1.0.4",
     "rbxts-transform-debug": "1.0.0-rc.1",
-    "roblox-ts": "sasial-dev/roblox-ts#dynamic-model",
+    "roblox-ts": "1.2.3",
     "typescript": "4.3.5"
   },
   "resolutions": {

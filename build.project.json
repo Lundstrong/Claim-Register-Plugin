@@ -1,7 +1,7 @@
 {
 	"name": "MainModule",
 	"tree": {
-		"$path": "out/Lua",
+		"$path": "out/Packaging",
 		"ReplicatedStorage": {
 			"$path": "out/ReplicatedStorage",
 			"include": {

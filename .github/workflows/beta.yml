@@ -36,6 +36,6 @@ jobs:
         run: yarn build:prod
 
       - name: Deploy
-        run: rojo upload --cookie "$ROBLOSECURITY" --asset_id 7175337547 default.project.json
+        run: rojo upload --cookie "$ROBLOSECURITY" --asset_id 7175337547 build.project.json
         env:
           ROBLOSECURITY: ${{ secrets.ROBLOSECURITY }}
