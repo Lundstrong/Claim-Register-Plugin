@@ -100,10 +100,10 @@
   resolved "https://registry.yarnpkg.com/@rbxts/services/-/services-1.1.5.tgz#cde5d38a60f38bdf3acfc4263d702f16a238dae6"
   integrity sha512-5/SGYCVcdvxIM19ZFf4k9Hq5jCNLW0c/1G804yr9+KuPteVyfag4YiBgkXE3QmGx1ITixIQJJYIKv1LoueWPww==
 
-"@rbxts/t@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@rbxts/t/-/t-2.1.4.tgz#fd9f7a6caff44b06258f6bdc7705bb75833b7953"
-  integrity sha512-DjDoh3NkcM3fmJDjwrcJaSKJu6oykUvJnZK2voRgZLlfb/8Nk4MNAlYLsuBiSexJA/q89+kOa8YzS/WN7Ysdow==
+"@rbxts/t@2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@rbxts/t/-/t-2.1.5.tgz#583d1feee5ca26dfae85254ebac0514316ed7c3e"
+  integrity sha512-eH2faj6wh4IJnZaqLi0jSmbOmnSFndSXJbXNwobrNAKwmdzxvM64sSsHZ5v1R02BQXuZP/zUjKeL7WS2416pxQ==
 
 "@rbxts/types@1.0.516":
   version "1.0.516"
