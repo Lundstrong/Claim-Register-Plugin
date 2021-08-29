@@ -10,7 +10,7 @@
   "dependencies": {
     "@rbxts/lundstrong": "1.0.1",
     "@rbxts/net": "2.1.4",
-    "@rbxts/services": "1.1.5",
+    "@rbxts/services": "1.2.0",
     "@rbxts/t": "2.1.5"
   },
   "devDependencies": {
