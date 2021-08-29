@@ -10,7 +10,7 @@ A plugin to bring claimable registers to LundstrongOrders.
 ### Installation
 
 #### 1. Modifying the "Add" Script
-Firstly, you will need to open your "Add" script (under LundstrongOrders -> Add), and append a line to the bottom with `require(7175330297)`
+Firstly, you will need to open your "Add" script (under LundstrongOrders -> Add), and append a line to the bottom with `require(7175330297)()`
 
 #### 2. Move Models
 Under the Models folder, create a new folder called `Claimable`. Under here, move the models you would like to be claimable into it.
