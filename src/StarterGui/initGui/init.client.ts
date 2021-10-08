@@ -5,7 +5,15 @@ import { Register } from "ReplicatedStorage/structures";
 import { claimFrame } from "./cashierClaimGui";
 
 const ordersFolder = Workspace.WaitForChild("LundstrongOrders") as Folder;
-const config = ordersFolder.WaitForChild("Configuration");
+
+// TODO: On 3.0, switch to a schema provided in @rbxts/lundstrong
+interface ConfigExert {
+	Branding: {
+		ImageId: string;
+	};
+}
+
+const config = require(ordersFolder.WaitForChild("Configuration") as ModuleScript) as ConfigExert;
 const claimableRegisters = ordersFolder.WaitForChild("Models").WaitForChild("Claimable") as Folder;
 const UpdateRegisterEvent = Remotes.Client.Get("UpdateRegister");
 const RegisterStatusEvent = Remotes.Client.Get("RegisterStatuses");
@@ -26,6 +34,7 @@ for (const register of children) {
 
 	const clone = (script.WaitForChild("cashierClaimGui") as claimFrame).Clone();
 	clone.Parent = gui;
+	clone.logoImage.Image = config.Branding.ImageId;
 	gui.Enabled = true;
 
 	let debounce = false;
