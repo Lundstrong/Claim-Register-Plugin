@@ -1,6 +1,6 @@
 {
   "name": "claim-register-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for claimable registers",
   "scripts": {
     "build:prod": "rbxtsc --rojo compile.project.json",
