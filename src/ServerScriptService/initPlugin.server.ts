@@ -1,6 +1,6 @@
+import { $warn } from "@lundstrong/rbxts-transform-debug";
 import { ReplicatedStorage, ServerScriptService, Workspace } from "@rbxts/services";
 import { t } from "@rbxts/t";
-import { $git } from "rbxts-transform-debug";
 import { Remotes } from "ReplicatedStorage/remotes";
 import { Register } from "ReplicatedStorage/structures";
 import { OrdersAPI } from "@rbxts/lundstrong";
@@ -18,8 +18,6 @@ ServerScriptService.WaitForChild("LundstrongOrders").WaitForChild("apiEvents");
 const API = require(ReplicatedStorage.WaitForChild("LundstrongOrders").WaitForChild(
 	"api",
 ) as ModuleScript) as OrdersAPI;
-
-const { Commit } = $git();
 
 const ordersFolder = Workspace.WaitForChild("LundstrongOrders") as Folder;
 const config = ordersFolder.WaitForChild("Configuration");
@@ -43,8 +41,8 @@ UpdateRegisterEvent.SetCallback((player, newStatus) => {
 	if (isValidRegister(newStatus)) {
 		if (newStatus.isClaimed === true) {
 			if (playersWithRegistersClaimed[player.UserId] === true) {
-				warn(
-					`[Claim Register Plugin] ${
+				$warn(
+					`${
 						player.DisplayName !== player.Name
 							? `${player.DisplayName} (@${player.Name})`
 							: player.DisplayName
@@ -65,8 +63,8 @@ UpdateRegisterEvent.SetCallback((player, newStatus) => {
 			return true;
 		}
 	} else {
-		warn(
-			`[Claim Register Plugin] INVALID REGISTER REQUEST SENT FROM ${
+		$warn(
+			`INVALID REGISTER REQUEST SENT FROM ${
 				player.DisplayName !== player.Name ? `${player.DisplayName} (@${player.Name})` : player.DisplayName
 			}`,
 		);
@@ -77,8 +75,3 @@ UpdateRegisterEvent.SetCallback((player, newStatus) => {
 OpenGuiEvent.Connect((player) => {
 	API.EnableGui(player, "cashierGui");
 });
-
-print("-----------------");
-print("Claim Register Plugin Loaded.");
-print(`Version: ${Commit}`);
-print("-----------------");

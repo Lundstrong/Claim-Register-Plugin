@@ -1,3 +1,4 @@
+import { $warn } from "@lundstrong/rbxts-transform-debug";
 import { Players, ReplicatedStorage, ServerScriptService, Workspace } from "@rbxts/services";
 import { Remotes } from "ReplicatedStorage/remotes";
 import { Register } from "ReplicatedStorage/structures";
@@ -37,7 +38,7 @@ for (const register of children) {
 		if (registerCall === true) {
 			debounce = false;
 		} else {
-			warn(`Unable to change register status. Register ID: ${registerId}`);
+			$warn(`Unable to change register status. Register ID: ${registerId}`);
 		}
 	});
 
@@ -49,7 +50,7 @@ for (const register of children) {
 		if (registerCall === true) {
 			debounce = false;
 		} else {
-			warn(`Unable to change register status. Register ID: ${registerId}`);
+			$warn(`Unable to change register status. Register ID: ${registerId}`);
 		}
 	});
 
@@ -69,7 +70,7 @@ for (const register of children) {
 		if (registerCall === true) {
 			debounce = false;
 		} else {
-			warn(`Unable to change register status. Register ID: ${registerId}`);
+			$warn(`Unable to change register status. Register ID: ${registerId}`);
 		}
 	});
 
@@ -81,7 +82,7 @@ for (const register of children) {
 		if (registerCall === true) {
 			debounce = false;
 		} else {
-			warn(`Unable to change register status. Register ID: ${registerId}`);
+			$warn(`Unable to change register status. Register ID: ${registerId}`);
 		}
 	});
 
