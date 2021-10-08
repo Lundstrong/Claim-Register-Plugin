@@ -22,8 +22,9 @@
 		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
 		"plugins": [
 			{
-				"transform": "rbxts-transform-debug",
+				"transform": "@lundstrong/rbxts-transform-debug",
 				"enabled": true,
+				"scope": "Claim Register Plugin",
 				"environmentRequires": {
 					//"NODE_ENV": "development"
 				}
