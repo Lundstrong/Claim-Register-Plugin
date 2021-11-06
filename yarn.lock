@@ -59,15 +59,15 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@lundstrong/rbxts-transform-debug@1.0.0-rc.3":
-  version "1.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@lundstrong/rbxts-transform-debug/-/rbxts-transform-debug-1.0.0-rc.3.tgz#6d9b63c302861eba2cf834b4e671547fc4c42206"
-  integrity sha512-bnr5m7OL861jdi7Ihma8JS2Df/Ji4a1nLb9c3kqKpYTx9VvQMcC9mzsWD1lfcwxozkkwvf+xZcCu9P13uUXKwg==
+"@lundstrong/rbxts-transform-debug@1.0.0-rc.4":
+  version "1.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@lundstrong/rbxts-transform-debug/-/rbxts-transform-debug-1.0.0-rc.4.tgz#2850ada21e35411c8f4afe35a8c4b3cf01c3822a"
+  integrity sha512-oMHA8m7VMmfKdJBaSUaXhenTKDvlsRdv732oqmtAyicJQCqieHOIKD4fN7HJdAXtzdj0c2wnKDLSc4pzpofNlg==
   dependencies:
     chalk "4.1.2"
     dotenv "10.0.0"
     execa "5.1.1"
-    typescript "=4.3.5"
+    typescript "=4.4.4"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1567,7 +1567,7 @@ type-fest@^0.6.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.6.0.tgz#8d2a2370d3df886eb5c90ada1c5bf6188acf838b"
   integrity sha512-q+MB8nYR1KDLrgr4G5yemftpMC7/QLqVndBmEEdqzmNj5dcFOO4Oo8qlwZE3ULT3+Zim1F8Kq4cBnikNhlCMlg==
 
-typescript@4.3.5, typescript@=4.3.5, typescript@^4.2.3:
+typescript@4.3.5, typescript@=4.3.5, typescript@=4.4.4, typescript@^4.2.3:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
