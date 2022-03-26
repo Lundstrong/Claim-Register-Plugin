@@ -120,6 +120,19 @@
   resolved "https://registry.yarnpkg.com/@rbxts/types/-/types-1.0.537.tgz#290ed13dc5accf71314828fc76abed72a41e7696"
   integrity sha512-9orfH1YFf2ewZe3rxuPhRlPXLshUj4Ewx+F7Kn73i/Iu4C7InclLFSw2YaYz326MsjKycS7CvIu+ZDWoo7kq8Q==
 
+"@roblox-ts/luau-ast@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@roblox-ts/luau-ast/-/luau-ast-1.0.1.tgz#d7fbe496d87416b45d0c3851f55047bd2f7662b6"
+  integrity sha512-FTKP24O0EbGupOmfJ6UHpag0K597bCpN4veDP9N91hSsrhIIHV59xLYw/e97g6hmwqYBfxOCuAvuLvsR4C9aMw==
+
+"@roblox-ts/rojo-resolver@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@roblox-ts/rojo-resolver/-/rojo-resolver-1.0.2.tgz#970d6f00049fcba93595bb6224faee79fa9be2a8"
+  integrity sha512-491pyfdxA7cmhDlY23rQi1rEuLCl0mPeAOUQbd6XdiaZ461MMtj38lvn1f8SXd6ZoZ/S4cO0XQUcKEBDGMdM2Q==
+  dependencies:
+    ajv "^8.6.3"
+    fs-extra "^10.0.0"
+
 "@types/json-schema@^7.0.7":
   version "7.0.8"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.8.tgz#edf1bf1dbf4e04413ca8e5b17b3b7d7d54b59818"
@@ -271,10 +284,20 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.1, ajv@^8.6.1:
+ajv@^8.0.1:
   version "8.6.1"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.1.tgz#ae65764bf1edde8cd861281cda5057852364a295"
   integrity sha512-42VLtQUOLefAvKFAQIxIZDaThq6om/PrfP0CYk3/vn+y4BMNkKnbli8ON2QCiHov4KkzOSJ/xSoBJdayiiYvVQ==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.2.2"
+
+ajv@^8.6.3:
+  version "8.11.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.11.0.tgz#977e91dd96ca669f54a11e23e378e33b884a565f"
+  integrity sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -286,7 +309,7 @@ ansi-colors@^4.1.1:
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
   integrity sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==
 
-ansi-regex@^5.0.0:
+ansi-regex@^5.0.0, ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
   integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
@@ -354,11 +377,6 @@ braces@^3.0.1, braces@~3.0.2:
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   dependencies:
     fill-range "^7.0.1"
-
-byots@^4.3.0-dev.20210326.17.17:
-  version "4.3.0-dev.20210326.17.17"
-  resolved "https://registry.yarnpkg.com/byots/-/byots-4.3.0-dev.20210326.17.17.tgz#d77c872bd17f0f7d02ed457b9db3ec1ffa5e28a4"
-  integrity sha512-kJCl+d+Ev4SrX5i/aYO6YM4FCxJFNClNRjG+GB2AwnfaHAUf+lYmOQ7n+IRSrajQI5Yay1mh1eRwVa3qzOuc1A==
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -1067,10 +1085,10 @@ lodash@^4.17.21:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
-lookpath@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/lookpath/-/lookpath-1.2.1.tgz#609c16d694603465c6c4b53bb5d5e3380e8eb1ef"
-  integrity sha512-dMlL1UqJmBNoXLxRM2lZICttyf9U2+5leFewVRWujybSoL9HAWfDw53NwIffnc5uPHmBiP5EosR/R8lkB4jftQ==
+lookpath@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/lookpath/-/lookpath-1.2.2.tgz#bddcd1440b6643e07495138376d43aed38bcd454"
+  integrity sha512-k2Gmn8iV6qdME3ztZC2spubmQISimFOPLuQKiPaLcVdRz0IpdxrNClVepMlyTJlhodm/zG/VfbkWERm3kUIh+Q==
 
 lru-cache@^6.0.0:
   version "6.0.0"
@@ -1338,21 +1356,22 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-roblox-ts@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/roblox-ts/-/roblox-ts-1.2.3.tgz#3dd6988a47400430d579f7a8b441075095f76284"
-  integrity sha512-8EAkahzauFmvBRokNeluOChLafuOoVPNZFiZhfclfyhCMYHQSDz1lSPpxn01aQZVMrXMCilE09MKlxdrpeggrw==
+roblox-ts@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/roblox-ts/-/roblox-ts-1.3.3.tgz#568505b1f9569e0152496667bc60644ee5c8448d"
+  integrity sha512-lInd8WSnTQ2h81maDKG/aH4GVx+iKRWdE/CcfjNZR61ir9r6MdxPlRhoYoh8Blb1ceZMCPLsAMXsK//sQu8C2g==
   dependencies:
-    ajv "^8.6.1"
-    byots "^4.3.0-dev.20210326.17.17"
+    "@roblox-ts/luau-ast" "^1.0.1"
+    "@roblox-ts/rojo-resolver" "^1.0.2"
+    ajv "^8.6.3"
     chokidar "^3.5.2"
     fs-extra "^10.0.0"
     kleur "^4.1.4"
-    lookpath "^1.2.1"
+    lookpath "^1.2.2"
     prompts "^2.4.1"
     resolve "^1.20.0"
-    typescript "=4.3.5"
-    yargs "^17.0.1"
+    typescript "=4.6.2"
+    yargs "^17.2.0"
 
 run-parallel@^1.1.9:
   version "1.2.0"
@@ -1466,12 +1485,28 @@ string-width@^4.1.0, string-width@^4.2.0:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.0"
 
+string-width@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
 strip-ansi@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.0.tgz#0b1571dd7669ccd4f3e06e14ef1eed26225ae532"
   integrity sha512-AuvKTrTfQNYNIctbR1K/YGTR1756GycPsg7b9bdV9Duqur4gv6aKqHXah67Z8ImS7WEz5QVcOtlfW2rZEugt6w==
   dependencies:
     ansi-regex "^5.0.0"
+
+strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
 
 strip-bom@^4.0.0:
   version "4.0.0"
@@ -1567,7 +1602,7 @@ type-fest@^0.6.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.6.0.tgz#8d2a2370d3df886eb5c90ada1c5bf6188acf838b"
   integrity sha512-q+MB8nYR1KDLrgr4G5yemftpMC7/QLqVndBmEEdqzmNj5dcFOO4Oo8qlwZE3ULT3+Zim1F8Kq4cBnikNhlCMlg==
 
-typescript@4.3.5, typescript@=4.3.5, typescript@^4.2.3:
+typescript@4.3.5, typescript@=4.3.5, typescript@=4.6.2, typescript@^4.2.3:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
@@ -1651,6 +1686,11 @@ yargs-parser@^20.2.2:
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
+yargs-parser@^21.0.0:
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
+  integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
+
 yargs@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
@@ -1664,15 +1704,15 @@ yargs@^16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yargs@^17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.0.1.tgz#6a1ced4ed5ee0b388010ba9fd67af83b9362e0bb"
-  integrity sha512-xBBulfCc8Y6gLFcrPvtqKz9hz8SO0l1Ni8GgDekvBX2ro0HRQImDGnikfc33cgzcYUSncapnNcZDjVFIH3f6KQ==
+yargs@^17.2.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.4.0.tgz#9fc9efc96bd3aa2c1240446af28499f0e7593d00"
+  integrity sha512-WJudfrk81yWFSOkZYpAZx4Nt7V4xp7S/uJkX0CnxovMCt1wCE8LNftPpNuF9X/u9gN5nsD7ycYtRcDf2pL3UiA==
   dependencies:
     cliui "^7.0.2"
     escalade "^3.1.1"
     get-caller-file "^2.0.5"
     require-directory "^2.1.1"
-    string-width "^4.2.0"
+    string-width "^4.2.3"
     y18n "^5.0.5"
-    yargs-parser "^20.2.2"
+    yargs-parser "^21.0.0"
