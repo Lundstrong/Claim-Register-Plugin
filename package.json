@@ -11,7 +11,7 @@
     "@rbxts/lundstrong": "1.0.1",
     "@rbxts/net": "2.1.4",
     "@rbxts/services": "1.2.0",
-    "@rbxts/t": "2.1.5"
+    "@rbxts/t": "3.1.1"
   },
   "devDependencies": {
     "@lundstrong/rbxts-transform-debug": "1.0.0-rc.3",
