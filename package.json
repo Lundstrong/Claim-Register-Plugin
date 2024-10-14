@@ -16,7 +16,7 @@
   "devDependencies": {
     "@lundstrong/rbxts-transform-debug": "1.0.0-rc.3",
     "@rbxts/compiler-types": "1.1.1-types.5",
-    "@rbxts/types": "1.0.537",
+    "@rbxts/types": "1.0.813",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
     "concurrently": "6.2.1",
